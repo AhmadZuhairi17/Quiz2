@@ -1,0 +1,30 @@
+package myLabTest;
+
+import java.util.Scanner;
+
+class Quiz2_Q1 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		double class_held, class_attend;
+		double percentage;
+		
+		System.out.println("Please enter the number of classes held :");
+		class_held=in.nextDouble();
+		System.out.println("Please enter the number of classes attended :");
+		class_attend=in.nextDouble();
+		
+		percentage=(class_attend/class_held)*100;
+		
+		if(percentage<75) {
+			System.out.println("The percentage of your class attended : "+percentage);
+			System.out.println("Sorry, you are not allowed to sit in an exam ");}
+		
+		else {
+			System.out.println("The percentage of your class attended : "+percentage);
+			System.out.println("Congrats, you are allowed to sit in an exam ");}
+		
+
+	}
+
+}
