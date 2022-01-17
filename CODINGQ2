@@ -1,0 +1,23 @@
+package myLabTest;
+
+import java.util.Scanner;
+
+class Quiz2_Q2 {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int [] num = new int [5];
+		
+		System.out.print("Please enter five positive integer numbers :");
+		for(int j=0; j<5; j++) {
+		num [j] = in.nextInt();}
+		
+		System.out.print("The reverse is ");
+		for(int i=4; i>-1; i--) {
+			System.out.print(num[i])
+		}
+		
+
+	}
+
+}
